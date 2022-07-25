@@ -1,0 +1,55 @@
+﻿<Window x:Class="dataset_generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dataset_generator"
+        xmlns:cc="clr-namespace:WPFCustomControls;assembly=WPFCustomControls"
+        xmlns:shared="clr-namespace:SharedWPF"
+        mc:Ignorable="d"
+        Title="Dataset Generator" Height="450" Width="800" AllowDrop="True"
+        DragOver="Window_DragOver"
+        Drop="Window_Drop"
+        KeyUp="Window_KeyUp">
+    <Window.DataContext>
+        <local:MVVM/>
+    </Window.DataContext>
+    <Window.Resources>
+        <shared:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="DnD Image Files or Directory" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32"/>
+        <cc:ScalableScrollViewer>
+            <Grid>
+                <local:PageImage SourcePath="{Binding SourcePath}" Threshold="{Binding Threshold}"/>
+            </Grid>
+        </cc:ScalableScrollViewer>
+        <Grid Grid.Row="1" Margin="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Text="Threshold: "/>
+                <cc:NumericBox Width="100" IntValue="{Binding Threshold}"/>
+                <cc:Separator/>
+                <TextBlock>
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="Page: {0} / {1}">
+                            <Binding Path="PageIndex"/>
+                            <Binding Path="PageCount"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <ProgressBar IsIndeterminate="{Binding IsExporting}" MinWidth="100" Margin="4"/>
+                <Button Content="Export" Click="Button_Click" Padding="10,4,10,4" IsEnabled="{Binding IsExporting, Converter={StaticResource InvertBooleanConverter}}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

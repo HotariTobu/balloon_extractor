@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "balloon_extractor", "balloon_extractor\balloon_extractor.csproj", "{B12AF847-E7CD-4002-8680-F03AC4DAC94E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataset_generator", "dataset_generator\dataset_generator.csproj", "{859009F4-3FCA-4227-9B9C-632ABAEC89DA}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "trainer", "trainer\trainer.pyproj", "{485904E6-DFD4-4EAB-8CAB-AE521F78666D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "extractor", "extractor\extractor.pyproj", "{483250EF-348B-4546-982F-6A137727099B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedWPF", "..\..\Cs\SharedWPF\SharedWPF\SharedWPF.shproj", "{AE6E9D7E-4F8F-43C0-A1EB-9BCF75EF9FCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFCustomControls", "..\..\Cs\WPFCustomControls\WPFCustomControls\WPFCustomControls.csproj", "{68F39B46-13A2-417E-AF68-E85898800135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "balloon_collector", "balloon_collector\balloon_collector.csproj", "{3A54E8B3-4051-4D41-A35C-164A6A8F537C}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\Cs\SharedWPF\SharedWPF\SharedWPF.projitems*{3a54e8b3-4051-4d41-a35c-164a6a8f537c}*SharedItemsImports = 5
+		..\..\Cs\SharedWPF\SharedWPF\SharedWPF.projitems*{859009f4-3fca-4227-9b9c-632abaec89da}*SharedItemsImports = 5
+		..\..\Cs\SharedWPF\SharedWPF\SharedWPF.projitems*{ae6e9d7e-4f8f-43c0-a1eb-9bcf75ef9fcb}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12AF847-E7CD-4002-8680-F03AC4DAC94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12AF847-E7CD-4002-8680-F03AC4DAC94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12AF847-E7CD-4002-8680-F03AC4DAC94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12AF847-E7CD-4002-8680-F03AC4DAC94E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859009F4-3FCA-4227-9B9C-632ABAEC89DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859009F4-3FCA-4227-9B9C-632ABAEC89DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859009F4-3FCA-4227-9B9C-632ABAEC89DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859009F4-3FCA-4227-9B9C-632ABAEC89DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485904E6-DFD4-4EAB-8CAB-AE521F78666D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485904E6-DFD4-4EAB-8CAB-AE521F78666D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483250EF-348B-4546-982F-6A137727099B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483250EF-348B-4546-982F-6A137727099B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F39B46-13A2-417E-AF68-E85898800135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F39B46-13A2-417E-AF68-E85898800135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F39B46-13A2-417E-AF68-E85898800135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F39B46-13A2-417E-AF68-E85898800135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A54E8B3-4051-4D41-A35C-164A6A8F537C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A54E8B3-4051-4D41-A35C-164A6A8F537C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A54E8B3-4051-4D41-A35C-164A6A8F537C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A54E8B3-4051-4D41-A35C-164A6A8F537C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98C83694-E3A8-44AC-9201-B5AD25B7B3CF}
+	EndGlobalSection
+EndGlobal
