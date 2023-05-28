@@ -11,7 +11,7 @@
   <Import Project="..\..\..\Cs\SharedWPF\SharedWPF\SharedWPF.projitems" Label="Shared" />
 
   <ItemGroup>
-    <PackageReference Include="WinCopies.WindowsAPICodePack.Shell" Version="2.10.2" />
+    <PackageReference Include="WinCopies.WindowsAPICodePack.Shell" Version="2.12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
